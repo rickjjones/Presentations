@@ -101,7 +101,74 @@
 					</code></pre>
 				</section>
 				<section>
-					
+					<p>Tag</p>
+					<p>The @Tag annotation is useful when we want to create a "test pack" with selected tests. Tags are used to filter which tests are executed:</p>
+				</section>
+				<section>
+					<p>Tags</p>
+					<p><a  target="_blank" href="https://junit.org/junit5/docs/current/user-guide/#writing-tests-tagging-and-filtering">JUnit 5 Tag Documentation </a> </p>
+				</section>
+				<section>
+					<h2 data-id="code-title">Tags</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+						class SomeTest {
+							@Tag("a")
+							@Test
+							void test1() {
+								// ...
+							}
+							@Tag("a")
+							@Test
+							void test2() {
+								// ...
+							}
+							@Tag("b")
+							@Test
+							void test3() {
+								// ...
+							}
+						}
+					</code></pre>
+				</section>
+				<section>
+					<p>RepeatedTest</p>
+					<p>This annotation works the same as the @Test annotation but runs the testing method the specified number of times. Each test iteration can have it's own name, by using a combination of dynamic placeholders and static text.</p>
+				</section>
+				<section>
+					<p>RepeatedTest</p>
+					<p><a  target="_blank" href="https://junit.org/junit5/docs/current/user-guide/#writing-tests-repeated-tests">JUnit 5 RepeatedTest Documentation </a> </p>
+				</section>
+				<section>
+					<h2 data-id="code-title">RepeatedTest</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+						//@RepeatedTest(5)
+						@DisplayName("Repeated Test")
+						@RepeatedTest(value = 5, name = "{displayName} -> {currentRepetition}")
+						void rptdTest(RepetitionInfo repetitionInfo) {
+							int arbitrary = 2;
+							System.out.println("Current iteration: " + repetitionInfo.getCurrentRepetition());
+
+							assertEquals(arbitrary, repetitionInfo.getCurrentRepetition());
+						}
+					</code></pre>
+				</section>
+				<section>
+					<p>ParametrizedTest</p>
+					<p>Parameterized tests make it possible to run a test multiple times as well, but with different arguments.</p>
+				</section>
+				<section>
+					<p>ParametrizedTest</p>
+					<p><a  target="_blank" href="https://junit.org/junit5/docs/current/user-guide/#writing-tests-parameterized-tests">JUnit 5 ParameterizedTest Documentation </a> </p>
+				</section>
+				<section>
+					<h2 data-id="code-title">ParameterizedTest</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+						@ParameterizedTest
+						@ValueSource(ints = {6,8,2,9})
+						void lessThanTen(int number) {
+							assertTrue(number < 10, "the number isn't less than 10");
+						}
+					</code></pre>
 				</section>
 			</div>
 		</div>
