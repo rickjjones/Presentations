@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<p>What is JUnit 5?</p>
+					<p>JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage</p>
+				</section>
+				<section>
+					<p>What is JUnit 5?</p>
+					<p>JUnit 5 = <Strong>JUnit Platform</Strong>  + JUnit Jupiter + JUnit Vintage</p>
+					<p>The JUnit Platform serves as a foundation for launching testing frameworks on the JVM. It also defines the TestEngine API for developing a testing framework that runs on the platform. Furthermore, the platform provides a Console Launcher to launch the platform from the command line and a JUnit 4 based Runner for running any TestEngine on the platform in a JUnit 4 based environment. First-class support for the JUnit Platform also exists in popular IDEs (see IntelliJ IDEA, Eclipse, NetBeans, and Visual Studio Code) and build tools (see Gradle, Maven, and Ant).</p>
+				</section>
+				<section>
+					<p>What is JUnit 5?</p>
+					<p>JUnit 5 = JUnit Platform + <Strong>JUnit Jupiter</Strong> + JUnit Vintage</p>
+					<p>JUnit Jupiter is the combination of the new programming model and extension model for writing tests and extensions in JUnit 5. The Jupiter sub-project provides a TestEngine for running Jupiter based tests on the platform.</p>
+				</section>
+				<section>
+					<p>What is JUnit 5?</p>
+					<p>JUnit 5 = JUnit Platform + JUnit Jupiter + <Strong>JUnit Vintage</Strong></p>
+					<p>JUnit Vintage provides a TestEngine for running JUnit 3 and JUnit 4 based tests on the platform.</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
