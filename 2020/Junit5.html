@@ -83,6 +83,21 @@
 					<p><a  target="_blank" href="https://junit.org/junit5/docs/current/user-guide/#writing-tests-assertions">JUnit 5 Assertion Documentation </a> </p>
 				</section>
 				<section>
+					<h2 data-id="code-title">Assertions</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+						@Test
+						void additionTest() {
+							Calculator calc = new Calculator();
+							assertAll(
+								() -> assertEquals(100, calc.add(1,1), "Doesn't add two positive numbers properly"),
+								() -> assertEquals(100, calc.add(-1,1), "Doesn't add a negative and a positive number properly"),
+								() -> assertNotNull(calc, "The calc variable should be initialized")
+							);
+						}
+					</code></pre>
+				</section>
+
+				<section>
 					<p>Display Names</p>
 					<p>simple annotation that changes the displayed name of the testing method.</p>
 				</section>
