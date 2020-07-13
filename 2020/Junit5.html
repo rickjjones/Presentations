@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>JUnit5</title>
 
 		<link rel="stylesheet" href="../dist/reset.css">
 		<link rel="stylesheet" href="../dist/reveal.css">
@@ -23,7 +23,7 @@
 				<section>
 					<p>What is JUnit 5?</p>
 					<p>JUnit 5 = <Strong>JUnit Platform</Strong>  + JUnit Jupiter + JUnit Vintage</p>
-					<h3>The JUnit Platform serves as a foundation for launching testing frameworks on the JVM. It also defines the TestEngine API for developing a testing framework that runs on the platform. Furthermore, the platform provides a Console Launcher to launch the platform from the command line and a JUnit 4 based Runner for running any TestEngine on the platform in a JUnit 4 based environment. First-class support for the JUnit Platform also exists in popular IDEs (see IntelliJ IDEA, Eclipse, NetBeans, and Visual Studio Code) and build tools (see Gradle, Maven, and Ant).<h3>
+					<p>The JUnit Platform serves as a foundation for launching testing frameworks on the JVM. It also defines the TestEngine API for developing a testing framework that runs on the platform.<p>
 				</section>
 				<section>
 					<p>What is JUnit 5?</p>
@@ -34,6 +34,15 @@
 					<p>What is JUnit 5?</p>
 					<p>JUnit 5 = JUnit Platform + JUnit Jupiter + <Strong>JUnit Vintage</Strong></p>
 					<p>JUnit Vintage provides a TestEngine for running JUnit 3 and JUnit 4 based tests on the platform.</p>
+				</section>
+				<section>
+					<ul><p>What's new?</p>
+						<li>The minimum JDK for JUnit 4 was JDK 5, while JUnit 5 requires at least JDK 8</li>
+						<li>The @Before, @BeforeClass, @After, and @AfterClass annotations are now the more readable as the @BeforeEach, @BeforeAll, @AfterEach, and @AfterAll annotations</li>
+						<li>@Ignore is now @Disable</li>
+						<li>@Category is now @Tag</li>
+						<li>Support for nested testing classes, and an added test factory for dynamic tests</li>
+					</ul>
 				</section>
 			</div>
 		</div>
