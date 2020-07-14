@@ -35,35 +35,7 @@
 					<p>JUnit 5 = JUnit Platform + JUnit Jupiter + <Strong>JUnit Vintage</Strong></p>
 					<p>JUnit Vintage provides a TestEngine for running JUnit 3 and JUnit 4 based tests on the platform.</p>
 				</section>
-				<section>
-					<p>What's new?</p>
-				</section>
-				<!-- <section>
-					<ul><p>What's new?</p>
-						<li>The minimum JDK for JUnit 4 was JDK 5, while JUnit 5 requires at least JDK 8</li>
-					</ul>
-				</section>
-				<section>
-					<ul><p>What's new?</p>
-						<li>The minimum JDK for JUnit 4 was JDK 5, while JUnit 5 requires at least JDK 8</li>
-						<li>The @Before, @BeforeClass, @After, and @AfterClass annotations are now the more readable as the @BeforeEach, @BeforeAll, @AfterEach, and @AfterAll annotations</li>
-					</ul>
-				</section>
-				<section>
-					<ul><p>What's new?</p>
-						<li>The minimum JDK for JUnit 4 was JDK 5, while JUnit 5 requires at least JDK 8</li>
-						<li>The @Before, @BeforeClass, @After, and @AfterClass annotations are now the more readable as the @BeforeEach, @BeforeAll, @AfterEach, and @AfterAll annotations</li>
-						<li>@Ignore is now @Disable</li>
-					</ul>
-				</section>
-				<section>
-					<ul><p>What's new?</p>
-						<li>The minimum JDK for JUnit 4 was JDK 5, while JUnit 5 requires at least JDK 8</li>
-						<li>The @Before, @BeforeClass, @After, and @AfterClass annotations are now the more readable as the @BeforeEach, @BeforeAll, @AfterEach, and @AfterAll annotations</li>
-						<li>@Ignore is now @Disable</li>
-						<li>@Category is now @Tag</li>
-					</ul>
-				</section>				 -->
+				
 				<section>
 					<ul><p>What's new?</p>
 						<li class="fragment">The minimum JDK for JUnit 4 was JDK 5, while JUnit 5 requires at least JDK 8</li>
@@ -92,11 +64,11 @@
 								() -> assertEquals(100, calc.add(1,1), "Doesn't add two positive numbers properly"),
 								() -> assertEquals(100, calc.add(-1,1), "Doesn't add a negative and a positive number properly"),
 								() -> assertNotNull(calc, "The calc variable should be initialized")
-							);
-						}
-					</code></pre>
+								);
+							}
+						</code></pre>
 				</section>
-
+				
 				<section>
 					<p>Display Names</p>
 					<p>simple annotation that changes the displayed name of the testing method.</p>
@@ -146,6 +118,10 @@
 					</code></pre>
 				</section>
 				<section>
+					<p>Tags</p>
+					<img src="../images/tag-ide.png"  style="height: 500px; margin: 0 auto 4rem auto;">
+				</section>
+				<section>
 					<p>RepeatedTest</p>
 					<p>This annotation works the same as the @Test annotation but runs the testing method the specified number of times. Each test iteration can have it's own name, by using a combination of dynamic placeholders and static text.</p>
 				</section>
@@ -168,6 +144,10 @@
 					</code></pre>
 				</section>
 				<section>
+					<p>RepeatedTest</p>
+					<img src="../images/repetition.png"  style="height: 500px; margin: 0 auto 4rem auto;">
+				</section>
+				<section>
 					<p>ParametrizedTest</p>
 					<p>Parameterized tests make it possible to run a test multiple times as well, but with different arguments.</p>
 				</section>
@@ -186,6 +166,10 @@
 					</code></pre>
 				</section>
 				<section>
+					<p>ParameterizedTest</p>
+					<img src="../images/parameterized.png"  style="height: 500px; margin: 0 auto 4rem auto;">
+				</section>
+				<section>
 					<p>Parallel</p>
 					<p>Running tests in parallel — for example, to speed up execution </p>
 				</section>
@@ -196,6 +180,9 @@
 				<section>
 					<p>Parallel</p>
 					<img src="../images/parallel.svg"  style="height: 500px; margin: 0 auto 4rem auto;background-color: white;">
+				</section>
+				<section>
+					<p>Questions?</p>
 				</section>
 			</div>
 		</div>
